@@ -1,0 +1,588 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(19, 20, 23);
+}
+/* 搜索图标 */
+.icon {
+  fill: #868ca0;
+  position: absolute;
+  top: 22px;
+  left: 220px;
+  bottom: 0;
+  width: 1em;
+  height: 1em;
+  z-index: 1;
+}
+/* 搜索框 */
+.search {
+  height: 45px;
+  width: 900px;
+  background-color: rgb(37, 40, 48);
+  padding: 0 50px;
+  border-radius: 8px;
+  border: 0 solid rgb(37, 40, 48);
+  margin-left: 40px;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+input::placeholder {
+  font-size: 20px;
+  color: rgb(134, 140, 160);
+  font-weight: 700;
+}
+
+input:focus {
+  outline: none; /*去除边框效果*/
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* 注册 */
+a {
+  text-decoration: none;
+}
+.sign {
+  display: inline-block;
+  line-height: 1.2;
+  font-size: 1.2em;
+  font-weight: 700;
+  background-color: rgb(71, 207, 115);
+  color: rgb(0, 0, 0);
+  margin: 0 10px 0 10px;
+  padding: 8px 16px;
+  border: 3px solid transparent;
+  border-radius: 3px;
+  text-align: center;
+}
+.sign:hover {
+  background-color: #21af4e;
+}
+
+/* 登录 */
+.login {
+  color: white;
+  font-size: 1.2em;
+  font-weight: 700;
+  background-color: rgb(68, 72, 87);
+  display: inline-block;
+  margin: 0 10px 0 0;
+  text-align: center;
+  border: 3px solid transparent;
+  border-radius: 3px;
+  line-height: 1.2;
+  padding: 8px 16px;
+}
+.login:hover {
+  background-color: rgb(144, 146, 155);
+}
+
+/* 测边框 */
+.side {
+  width: 153px;
+  background-color:/* rgb(30, 31, 38)*/ transparent;
+  float: left;
+  margin-left: 19px;
+  /* margin-top: 19px; */
+}
+/* 文字 */
+.side .side-text {
+  font-weight: 400; /*取消加粗*/
+  font-size: 12px;
+  color: rgb(170, 174, 188);
+  margin-top: 90px;
+}
+.side .start-coding {
+  /* 外边距 */
+  margin-top: 20px;
+  /* 设置宽高 */
+  width: 141px;
+  height: 40px;
+  /* 字体颜色 */
+  color: white;
+  /* 字体大小 */
+  font-size: 18px;
+  font-weight: bold;
+  /* 字体居中 */
+  text-align: center;
+  line-height: 37px;
+  background-color: rgb(19, 20, 23);
+  position: relative;
+  border-radius: 4px;
+}
+.side .start-coding::after {
+  content: "";
+  position: absolute;
+  border-radius: 4px;
+  z-index: -1;
+  width: 104%;
+  height: 113%;
+  left: -3px;
+  top: -3px;
+  /* 设置渐变 */
+  background-image: linear-gradient(
+    60deg,
+    #96fbc4 0%,
+    #f9f586 15%,
+    #fda085 35%,
+    #cfd9df 52%,
+    #7046aa 71%,
+    #3cba92 87%,
+    #fee140 100%
+  );
+  animation: change 2s ease-in-out infinite;
+}
+
+.side .start-coding:hover {
+  cursor: pointer;
+}
+
+.side .green-border {
+  display: block;
+  width: 145px;
+  height: 4px;
+  background-color: rgb(71, 207, 115);
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+/* 文案 */
+
+.side .wenan {
+  color: white;
+  display: block;
+  width: 150px;
+  height: 25px;
+  padding-left: 3px;
+  padding-top: 5px;
+}
+
+.side .wenan1 {
+  margin-top: 15px;
+}
+
+.side .wenan:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+.side .yellow-border {
+  display: block;
+  width: 145px;
+  height: 4px;
+  background-color: rgb(255, 221, 64);
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.side .codepen {
+  display: inline-block;
+  height: 25px;
+  width: 153px;
+  color: white;
+  padding-top: 5px;
+}
+.side .PRO {
+  width: 153px;
+  height: 30px;
+  display: inline-block;
+  background-color: rgb(255, 221, 64);
+}
+.side .codepen-pro {
+  margin-top: 20px;
+}
+.side .codepen-pro:hover {
+  background-color: black;
+}
+/* 文字链接 */
+.side .a-text,
+.side .a-text1 {
+  font-size: 12px;
+  color: rgb(121, 140, 149);
+}
+.side .a-text:hover,
+.side .a-text1:hover {
+  color: white;
+}
+
+/* 右侧文字区域 */
+.big-box {
+  /* float: left; */
+  margin: 150px 30px;
+  position: relative;
+  display: inline-block;
+}
+.big-box .big-box-box1 {
+  margin: 0 auto;
+  /* float: left; */
+}
+
+.big-box .big-box-box1 .pagetxt {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  /* float: left; */
+  margin: 0 62px;
+  width: 500px;
+}
+.big-box .big-box-box1 .smalltxt {
+  color: rgb(199, 201, 175);
+  margin: 10px 80px;
+  width: 545px;
+  /* float: left; */
+}
+
+/* 免费注册 */
+.sign-for-free {
+  display: block;
+  float: left;
+  height: 40px;
+  border-radius: 5px;
+  width: 180px;
+  padding-top: 10px;
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(71, 207, 115);
+  margin: 30px 80px;
+}
+.sign-for-free:hover {
+  background-color: #21af4e;
+}
+
+/* 代码片区域 */
+.code {
+  background-color: rgb(60, 63, 71);
+
+  width: 500px;
+  height: 410px;
+  display: inline-block;
+  margin: 100px 10px;
+  position: absolute;
+  border-radius: 8px;
+}
+/* 工具图标 */
+.code .icon1 {
+  position: relative;
+  left: 188px;
+  top: -9px;
+}
+/* 下图标 */
+.code .icon-xia1 {
+  position: relative;
+  top: -9px;
+  left: 435px;
+}
+/* html板块 */
+.code .html {
+  background-color: rgb(29, 30, 34);
+  width: 300px;
+  height: 138px;
+  float: left;
+  margin-left: 180px;
+  position: absolute;
+  top: -20px;
+  border-radius: 8px;
+}
+.code .html p {
+  color: rgb(197, 200, 201);
+  margin: 10px 30px;
+}
+
+.code .icon2 {
+  left: 204px;
+  top: 141px;
+  position: relative;
+}
+.code .icon-xia2 {
+  top: 138px;
+  position: relative;
+  left: 455px;
+}
+/* css板块 */
+.code .css {
+  background-color: rgb(29, 30, 34);
+  width: 300px;
+  height: 138px;
+  float: left;
+  border-radius: 8px;
+  margin-left: 240px;
+  position: absolute;
+  top: 130px;
+}
+.code .css p {
+  color: rgb(197, 200, 201);
+  margin: 10px 30px;
+}
+.shine {
+  top: -32px;
+  left: 70px;
+  position: relative;
+  animation: shine 1s infinite;
+}
+/* js板块 */
+.code .icon3 {
+  left: 80px;
+  top: 300px;
+  position: relative;
+}
+
+.code .icon-xia3 {
+  position: relative;
+  top: 300px;
+  left: 330px;
+}
+.code .js {
+  background-color: rgb(29, 30, 34);
+  width: 300px;
+  height: 138px;
+  float: left;
+  border-radius: 8px;
+  margin-left: 160px;
+  position: absolute;
+  top: 290px;
+}
+
+.code .js p {
+  color: rgb(197, 200, 201);
+  margin: 10px 30px;
+}
+
+.code .txt {
+  animation: grow 10s steps(70) 1s normal both,
+    shine 500ms steps(40) infinite normal;
+}
+/* 图标排列 */
+.tubiao {
+  display: flex;
+  margin-left: 260px;
+}
+.tubiao-block {
+  width: 365px;
+  height: 300px;
+  background-color: rgb(44, 48, 58);
+  margin: 0 15px;
+  border-radius: 6px;
+}
+.tubiao .img {
+  text-align: center;
+  width: 80px;
+  height: 65px;
+  background-color: rgb(19, 20, 23);
+  border-radius: 4px;
+  position: relative;
+  top: -15px;
+  left: 15px;
+}
+.tubiao .tubiao-block h2 {
+  position: relative;
+  margin: 0 15px;
+}
+.tubiao .tubiao-block p {
+  color: rgb(199, 194, 171);
+  margin: 10px 15px;
+  font-size: 15px;
+}
+.tubiao .tubiao-block .button {
+  color: rgb(255, 255, 250);
+  text-decoration: none;
+  display: block;
+  width: 145px;
+  height: 36px;
+  background-color: rgb(68, 72, 87);
+  border-radius: 5px;
+  text-align: center;
+  margin: 30px 15px;
+  padding-top: 10px;
+}
+/* 显示模块 */
+.mokuai {
+  margin: 40px 270px;
+  display: flex;
+}
+.mokuai .react,
+.mokuai .vue,
+.mokuai .tailwind,
+.mokuai .sass,
+.mokuai .gsap {
+  width: 490px;
+  height: 233px;
+  background-color: rgb(44, 48, 58);
+  cursor: pointer;
+  margin: 0 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* 鼠标靠近缩放 */
+.mokuai .react:hover,
+.mokuai .vue:hover,
+.mokuai .tailwind:hover,
+.mokuai .sass:hover,
+.mokuai .gsap:hover {
+  transform: scale(1.1);
+  transition: transform 0.6s ease-in-out; /*设置过渡*/
+}
+
+/* 鼠标经过时，文字变白色 */
+
+/* Bring */
+.Bring {
+  text-align: center;
+  margin: 40px 280px;
+  background-color: rgb(30, 31, 38);
+  border-radius: 8px;
+}
+.Bring h2 {
+  color: white;
+}
+.Bring .h-2 {
+  display: inline-block;
+  margin: 50px auto;
+  margin-bottom: 0;
+}
+.Bring p {
+  display: block;
+  text-align: center;
+  width: 620px;
+  color: rgb(199, 201, 211);
+  margin: 15px auto;
+}
+.Bring .team {
+  margin: 12px auto;
+  color: black;
+  width: 120px;
+  height: 34px;
+  background-color: rgb(84, 214, 125);
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 8px;
+  font-weight: bold;
+}
+.Bring .team:hover {
+  background-color: rgb(71, 207, 115);
+  cursor: pointer;
+}
+.Bring .h-l {
+  font-size: 17px;
+  display: inline-block;
+  margin: 20px auto;
+}
+.Bring .company-icon {
+  display: flex;
+  margin: auto 0;
+  margin-left: 38px;
+  padding: 0;
+}
+.Bring .company-icon .company {
+  margin-left: 5px;
+}
+.Bring .company-icon .company img {
+  padding: 1rem;
+  display: block;
+}
+
+.view-txt {
+  text-decoration: none;
+  color: #0ebeff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  position: relative;
+  display: block;
+  margin-top: 16px;
+}
+.view-txt::after {
+  content: "→";
+  position: absolute;
+  bottom: -0.12rem;
+  margin-left: 0.5rem;
+}
+.job {
+  /* float: left; */
+  margin-left: 280px;
+  margin-top: 260px;
+  width: 548px;
+  /* text-align: center; */
+}
+.job h2,
+.job p {
+  color: white;
+}
+.job p {
+  margin: 18px 0;
+}
+.job .post {
+  width: 102px;
+  height: 35px;
+  background-color: rgb(86, 197, 121);
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.job .post:hover {
+  background-color: rgb(63, 184, 101);
+  cursor: pointer;
+}
+
+/* 四个盒子 */
+.box-four {
+  margin-left: 900px;
+  position: relative;
+  top: -300px;
+}
+.box-four .box {
+  width: 550px;
+  height: 83px;
+  border-bottom: 1px solid;
+  outline: none;
+  border-bottom-color: rgba(144, 146, 155, 0.7);
+}
+.box-four .box:hover {
+  border-radius: 4px;
+  background: rgba(74, 75, 77, 0.7);
+  transform: scale(0.97);
+  /* padding: 1.5rem 1rem 0.5rem; */
+  transition: transform 0.5s ease, background 0.5s ease;
+  cursor: pointer;
+}
+
+.box-four .box h2 {
+  color: white;
+}
+.box-four .box p {
+  color: rgb(199, 201, 175);
+  display: inline-block;
+  margin-top: 10px;
+}
+/* 动画区 */
+/* 渐变 */
+@keyframes change {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* 图标闪烁 */
+@keyframes shine {
+  from {
+    color: white;
+  }
+  to {
+    color: rgb(29, 30, 34);
+  }
+}
